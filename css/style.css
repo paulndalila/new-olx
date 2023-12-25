@@ -1,0 +1,161 @@
+#laptop-car{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item{
+    height: 250px;
+}
+
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.row .card{
+    font-family: 'Poppins', Times, serif;
+}
+
+.row .card-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row .col{
+    margin-right: 10px;
+}
+
+.accordion .card{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion .card ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion .card ul a{
+    color: gray;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.accordion .card ul a:hover{
+    color: black;
+}
+
+/* Style for the active (open) accordion header */
+.accordion-header button[aria-expanded="true"] {
+    background-color: #f8f9fa; /* Change background color */
+    color: #000; /* Change text color */
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags a{
+    text-decoration: none;
+    color: #1d1d1d;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .5s;
+    text-transform: uppercase;
+    background-color: rgb(241, 241, 241);
+}
+
+.tags a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* Style for the active (open) accordion body
+.collapse.show {
+    border: 1px solid #ddd; /* Change border */
+    /* background-color: #f8f9fa; /* Change background color */
+    /* padding: 10px; /* Adjust padding */
+/* } */
+
+#products .card{
+    gap: 10px;
+    width: 18rem;
+    display: flex;
+    padding: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+#products .card img{
+    height: 55%;
+    object-fit: cover;
+}
+
+#products .card div{
+    padding: 0 5px 5px 5px;
+}
+
+#products .card{
+   height: 360px;
+}
+
+.product__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 30px;
+}
+
+.product__pagination::after{
+    content: ' >>';
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', Times, serif;
+}
+
+.product__pagination a{
+    text-decoration: none;
+    font-family: 'Poppins', Times, serif;
+    color: #1d1d1d;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__pagination a.active, .product__pagination a:hover{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .accordion .card{
+        margin-right: 10px;
+    }
+    .accordion .card ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    #products .card{
+        width: 100%;
+    }
+
+    #carousel{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
