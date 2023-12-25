@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="icon" href="images/favicon.png"  rel="icon" />
+    <link rel="stylesheet" href="css/lpage.css">
     <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
@@ -25,15 +26,16 @@
                 <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
             </ul>
             <form action="filter.html" method="" class="d-flex">
-                <div class="nav-item dropdown">
+                <div class="nav-item dropdown" id="s-bar">
                     <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</a> -->
-                    <select class="nav-link dropdown-toggle m-2 mt-0 mb-0" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <option class="dropdown-item" selected="all">Filter by: All</option>
+                    <select class="nav-link dropdown-toggle me-1" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <option class="dropdown-item" selected="all">Category: All</option>
                         <option class="dropdown-item" value="bags">Bags</option>
                         <option class="dropdown-item" value="shoes">Shoes</option>
                         <option class="dropdown-item" value="clothes">Clothes</option>
                         <option class="dropdown-item" value="jewelery">Jewelery</option>
                         <option class="dropdown-item" value="electronics">Electronics</option>
+                        <option class="dropdown-item" value="Accessories">Accessories</option>
                     </select>
                 </div>
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
@@ -44,39 +46,79 @@
     </nav>
 
     <!-- Navigation Guidance Section -->
-    <div class="container">
-        <section>
-            <h2>Navigating NewOLX</h2>
-            <ol>
-            <li><b>Navigation:</b> Use the nav bar to explore different parts of the webpage.</li>
-            <li><b>Filtered contents:</b> Get filtered contents by specifying item category on the search bar and accordions.</li>
-            <li><b>Post/Sell an item:</b>User must create an account and login first</li>
-            <li><b>Contact Us:</b>Reach out incase you have any more queries using the 'contacts' page.</li>
-            </ol>
+    <div class="container pt-5 pb-5">
+        <section class="nav-row">
+            <img src="images/2.png" alt="logo">
+            <div class="col">
+                <h2>Navigating NewOLX</h2>
+                <ol>
+                    <li><b>Navigation:</b> Use the nav bar to explore different parts of the webpage.</li>
+                    <li><b>Filtered contents:</b> Get filtered contents by specifying item category on the search bar and accordions.</li>
+                    <li><b>Create Ad/Post Listing:</b> Sign in or create an account if you do not have one the goto <code>'Post Listing'</code> to add your item</li>
+                    <li><b>Contact Us:</b> Reach out incase you have any more queries using the 'contacts' page.</li>
+                </ol>
+            </div>
         </section>
     
         <!-- FAQs Section -->
-        <section>
+        <section class="pt-4">
             <h2>Frequently Asked Questions (FAQs)</h2>
             <!-- Add FAQ items -->
             <div class="accordion" id="accordionFAQ">
-            <!-- FAQ Item 1 -->
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    FAQ Question 1?
-                    </button>
-                </h2>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. How can I create an advertisement for my product on NewOLX?</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">To create an advertisement for your product on NewOLX, follow these simple steps: <br>
+                            <ul>
+                                <li>Sign in to your NewOLX account or register if you're a new user.</li>
+                                <li>Click on the <code>"Post an Ad"</code>  / <code>"Sell Your Item"</code> button.</li>
+                                <li>Fill in the required details about your product, including title, description, category, price, and upload images.</li>
+                                <li>Review and confirm the information before posting your advertisement.</li>
+                            </ul>                            
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
-                <div class="card-body">
-                    Answer to FAQ Question 1.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. What types of products can be advertised on NewOLX?</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">You can advertise a wide range of products on NewOLX, including electronics, fashion items, vehicles, real estate, services, and more. However, certain restricted items, such as illegal or prohibited goods, may not be allowed. Refer to our guidelines when posting your listings.</div>
+                    </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. Are there any fees or charges associated with posting advertisements?</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Posting advertisements on NewOLX is free for standard listings. However, there might be optional paid features or promotional tools available for a fee. We do not charge commission on successful transactions between buyers and sellers.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        4. How do potential buyers contact me regarding my advertised product?</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Interested buyers can contact you directly through the email address or phone number provided. You'll receive notifications and messages from potential buyers interested in your product, allowing you to communicate with only serious buyers.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        5. Can I edit or remove my advertisement after posting it?</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Yes, you can easily manage your advertisements by logging into your NewOLX account. From your dashboard or listings section, you'll have the option to edit, update, or remove your posted advertisements as needed.</div>
+                    </div>
                 </div>
             </div>
             <!-- Add more FAQ items -->
-            </div>
         </section>
   
     </div>

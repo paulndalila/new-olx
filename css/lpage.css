@@ -1,0 +1,23 @@
+.nav-row{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-row img{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.nav-row div{
+    min-width: 200px;
+}
+
+.nav-row ol{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
