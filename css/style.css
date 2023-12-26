@@ -141,7 +141,9 @@
 
 @media screen and (max-width: 800px) {
 
-    
+    #laptop-car{
+        height: 150px;
+    }
     .carousel-item{
         height: 150px;
     }
@@ -153,6 +155,10 @@
         margin: 0;
         padding: 0;
     }
+
+    /* .products-body{   
+        background-color: red;
+    } */
 
     #products .card{
         width: 100%;
