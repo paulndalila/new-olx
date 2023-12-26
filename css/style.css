@@ -141,6 +141,11 @@
 
 @media screen and (max-width: 800px) {
 
+    
+    .carousel-item{
+        height: 150px;
+    }
+
     .accordion .card{
         margin-right: 10px;
     }
