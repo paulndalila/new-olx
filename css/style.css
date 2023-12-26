@@ -27,6 +27,10 @@
     margin-right: 10px;
 }
 
+#sidebar{
+    margin-top: 30px;
+}
+
 .accordion .card{
     border: none;
     margin: 0;
