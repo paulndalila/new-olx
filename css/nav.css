@@ -61,9 +61,37 @@ footer .footer__widget form button{
 }
 
 @media screen and (max-width: 800px) {
-    body{
+    /* body{
         overflow-x: hidden;
         padding: 0;
         margin: 0;
+    } */
+
+    nav ul{
+       width: 100%; 
+       display: flex;
+       margin: 20px 0;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    nav ul li{
+        width: 98.5%; 
+        margin-left: 5px; 
+        border-radius: 4px; 
+        overflow: hidden;  
+    }
+
+    nav ul li a{  
+        transition: .5s;
+        text-align: center;
+    }
+
+    nav ul li a:hover{
+        background-color: #fff;
+    }
+
+    nav form select{
+        margin-left: 5px;
     }
 }
